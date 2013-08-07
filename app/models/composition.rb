@@ -10,4 +10,7 @@ class Composition < ActiveRecord::Base
 
   validates_presence_of :title
 
+  attr_accessible :title
+  attr_accessible :subtitle
+
 end

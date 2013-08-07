@@ -1,0 +1,18 @@
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Subtitle</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @compositions.each do |composition| %>
+			<tr>
+				<td><%= composition.title %></td>
+				<td><%= composition.subtitle %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<br /><br />
+<%= link_to "New", new_composition_path %>
