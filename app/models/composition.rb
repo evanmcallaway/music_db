@@ -4,7 +4,7 @@
 # including scores, arrangers, and composers. 
 #
 class Composition < ActiveRecord::Base
-#  has_many :scores, :dependent => :destroy
+  has_many :scores, :dependent => :destroy
 
   validates_presence_of :title
 
