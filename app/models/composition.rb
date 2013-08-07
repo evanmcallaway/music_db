@@ -5,6 +5,8 @@
 #
 class Composition < ActiveRecord::Base
   has_many :scores, :dependent => :destroy
+  has_many :compositionships
+  has_many :composers, :through => :compositionship, :foreign_key => :musician_id
 
   validates_presence_of :title
 
