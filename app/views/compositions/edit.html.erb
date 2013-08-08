@@ -1,0 +1,6 @@
+<%= form_for @composition, :url => {:action => "update"} do |form| %>
+<%= render :partial => "compositions/form", :object => form %>
+<%= submit_tag "Update" %>
+<% end %>
+<br /><br />
+<%= link_to "Cancel", compositions_path %>
