@@ -57,4 +57,5 @@ MusicDb::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   
   resources :compositions
+  resources :musicians
 end

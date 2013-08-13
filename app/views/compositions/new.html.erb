@@ -1,7 +1,6 @@
-<%= form_for @composition, url: {:action => "create"} do |form| %>
-	<%= label_tag :title, "Title:" %>
-	<%= form.text_field :title %><br />
-	<%= label_tag :subtitle, "Subtitle:" %>
-	<%= form.text_field :subtitle %><br />
-	<%= form.submit "Create" %>
+<%= form_for @composition, :url => {:action => "create"} do |form| %>
+<%= render :partial => "compositions/form", :object => form %>
+<%= submit_tag "Create" %>
 <% end %>
+<br /><br />
+<%= link_to "Cancel", compositions_path %>
